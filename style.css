@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#060029;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:'Fredoka', sans-serif;
+}
+
+/* PANTALLA 1 */
+
+.main-layout{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+}
+
+.photo-side{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.main-photo{
+
+    width:350px;
+}
+
+.card{
+
+    width:430px;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:white;
+}
+
+h1{
+
+    font-size:3rem;
+
+    margin-bottom:10px;
+}
+
+.birthday-title{
+
+    color:#FFD88A;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+.subtitle{
+
+    margin-bottom:25px;
+}
+
+#passwordDisplay{
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:18px;
+
+    min-height:65px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:#FFD88A;
+
+    margin-bottom:25px;
+}
+
+.keypad{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,80px);
+
+    gap:12px;
+
+    justify-content:center;
+}
+
+button{
+
+    width:80px;
+
+    height:80px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+    color:#060029;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+}
+
+.clear{
+
+    background:#F3A8CC;
+}
+
+.enter{
+
+    background:#FFD88A;
+}
+
+#message{
+
+    margin-top:18px;
+
+    min-height:25px;
+
+    font-weight:bold;
+}
+
+/* BOTONES */
+
+.continue-btn{
+
+    width:auto;
+
+    height:auto;
+
+    padding:18px 35px;
+
+    background:#FFD88A;
+
+    color:#060029;
+
+    font-size:1.2rem;
+
+    border:none;
+
+    border-radius:18px;
+}
+
+/* PANTALLA 2 */
+
+#birthdayScreen{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.birthday-container{
+
+    text-align:center;
+
+    color:white;
+
+    max-width:800px;
+
+    padding:40px;
+}
+
+.birthday-container h1{
+
+    color:#FFD88A;
+
+    font-size:4rem;
+}
+
+.birthday-container h2{
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+}
+
+.birthday-date{
+
+    color:#FFD88A;
+
+    margin-bottom:25px;
+}
+
+.birthday-text{
+
+    font-size:1.4rem;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.birthday-heart{
+
+    color:#9EFFB0;
+
+    margin-bottom:35px;
+
+    font-size:1.3rem;
+}
+
+/* PANTALLA 3 */
+
+#cakeScreen{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.cake-container{
+
+    text-align:center;
+
+    color:white;
+
+    width:100%;
+}
+
+.cake-image{
+
+    width:450px;
+
+    max-width:90vw;
+
+    margin-top:20px;
+
+    margin-bottom:30px;
+}
+
+#wishMessage{
+
+    display:none;
+
+    margin-top:30px;
+}
+
+#wishMessage p{
+
+    font-size:1.5rem;
+
+    line-height:1.9;
+
+    color:#FFD88A;
+
+    max-width:800px;
+
+    margin:auto;
+}
+
+/* CARTA */
+
+#letterScreen{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+.letter-container{
+
+    width:900px;
+
+    max-width:95%;
+}
+
+.letter-container h1{
+
+    text-align:center;
+
+    color:#FFD88A;
+
+    margin-bottom:25px;
+}
+
+.letter-box{
+
+    background:white;
+
+    color:#060029;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    line-height:1.9;
+
+    font-size:1.15rem;
+
+    box-shadow:0 0 30px rgba(255,255,255,0.1);
+}
+
+/* VIDEO */
+
+#videoScreen{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+.video-container{
+
+    text-align:center;
+
+    color:white;
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.video-container h1{
+
+    color:#FFD88A;
+
+    margin-bottom:30px;
+}
+
+.video-box{
+
+    width:100%;
+
+    max-width:650px;
+
+    margin:0 auto 35px auto;
+}
+
+.video-box video{
+
+    width:100%;
+
+    max-width:650px;
+
+    display:block;
+
+    margin:auto;
+
+    border-radius:25px;
+
+    box-shadow:0 0 25px rgba(255,255,255,0.15);
+}
+
+.video-text{
+
+    color:#FFD88A;
+
+    font-size:1.4rem;
+
+    line-height:2;
+
+    text-align:center;
+
+    margin-top:20px;
+}

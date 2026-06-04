@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sole mio ☀️💖 Birthday</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- PANTALLA 1 -->
+
+    <div class="main-layout">
+
+        <div class="photo-side">
+
+            <img
+                src="images/ENTER_THE_PASSWORD.png"
+                alt="Avonne"
+                class="main-photo">
+
+        </div>
+
+        <div class="card">
+
+            <h1>Sole mio ☀️💖</h1>
+
+            <p class="birthday-title">
+                To: The Love of My Life
+            </p>
+
+            <p class="subtitle">
+                Enter the day our story began
+            </p>
+
+            <div id="passwordDisplay">
+                _ _ _ _
+            </div>
+
+            <div class="keypad">
+
+                <button onclick="addNumber('1')">1</button>
+                <button onclick="addNumber('2')">2</button>
+                <button onclick="addNumber('3')">3</button>
+
+                <button onclick="addNumber('4')">4</button>
+                <button onclick="addNumber('5')">5</button>
+                <button onclick="addNumber('6')">6</button>
+
+                <button onclick="addNumber('7')">7</button>
+                <button onclick="addNumber('8')">8</button>
+                <button onclick="addNumber('9')">9</button>
+
+                <button class="clear" onclick="clearPassword()">⌫</button>
+                <button onclick="addNumber('0')">0</button>
+                <button class="enter" onclick="checkPassword()">✓</button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+    <!-- PANTALLA 2 -->
+
+    <div id="birthdayScreen">
+
+        <div class="birthday-container">
+
+            <h1>Happy Birthday</h1>
+
+            <h2>Sole mio ☀️💖</h2>
+
+            <p class="birthday-date">
+                June 5, 2026
+            </p>
+
+            <p class="birthday-text">
+
+                Every day with you is a gift.
+
+                <br><br>
+
+                Today is your day,
+                my love ❤️
+
+            </p>
+
+            <p class="birthday-heart">
+
+                A small gift made with all my heart 💙
+
+            </p>
+
+            <button
+                class="continue-btn"
+                onclick="showCakeScreen()">
+
+                🎂 Continue
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- PANTALLA 3 -->
+
+    <div id="cakeScreen">
+
+        <div class="cake-container">
+
+            <h1 id="cakeTitle">
+                Make a Wish ☀️💖
+            </h1>
+
+            <div class="cake-wrapper">
+
+                <img
+                    src="images/PASTELENCENDIDO.png"
+                    alt="Birthday Cake"
+                    class="cake-image">
+
+            </div>
+
+            <button
+                id="blowBtn"
+                class="continue-btn"
+                onclick="blowCandles()">
+
+                🕯️ Blow the Candles
+
+            </button>
+
+            <div id="wishMessage"></div>
+
+        </div>
+
+    </div>
+
+    <!-- PANTALLA 4 -->
+
+    <div id="letterScreen">
+
+        <div class="letter-container">
+
+            <h1>
+                For Avonne ❤️
+            </h1>
+
+            <div class="letter-box">
+
+                <p>
+
+                    Sole mio ☀️💖
+
+                    <br><br>
+
+                    Happy Birthday, my love.
+
+                    <br><br>
+
+                    Today is not just another day. Today is the day that brought into the world the person who changed my life in the most beautiful way.
+
+                    <br><br>
+
+                    Sometimes I wish I could be there with you, celebrating, making you laugh, holding your hand and reminding you in person how much you mean to me. Distance may keep us apart physically, but it has never changed what I feel for you. No matter how many kilometers separate us, my heart always finds its way back to you.
+
+                    <br><br>
+
+                    Your smile, your kindness, your strength, and even the little things you do every day make my world brighter. You have given me memories that I will always carry with me and feelings that are impossible to put completely into words.
+
+                    <br><br>
+
+                    On your birthday, I don't just wish you happiness for today. I wish you happiness for every day that follows. I hope your dreams come true, that life surprises you with beautiful opportunities, and that you always remember how special you are.
+
+                    <br><br>
+
+                    Thank you for your love, your patience, your support, and for being yourself. Thank you for every conversation, every laugh, every moment we have shared together. You have made my life better simply by being part of it.
+
+                    <br><br>
+
+                    I hope this year brings you countless reasons to smile, new adventures to enjoy, and all the love that you deserve.
+
+                    <br><br>
+
+                    And if there is one thing I want you to remember today, it is this:
+
+                    <br><br>
+
+                    You are loved.
+
+                    <br><br>
+
+                    You are appreciated.
+
+                    <br><br>
+
+                    You are important.
+
+                    <br><br>
+
+                    And you mean more to me than you can imagine.
+
+                    <br><br>
+
+                    Happy Birthday, my Heaven 💙☁️
+
+                    <br><br>
+
+                    I love you today, tomorrow, and FoREVer.
+
+                    <br><br>
+
+                    My heart is yours,
+
+                    <br><br>
+
+                    Maicol 🌈🧡
+
+                </p>
+
+            </div>
+
+            <br><br>
+
+            <button
+                class="continue-btn"
+                onclick="showVideoScreen()">
+
+                🎥 One Last Surprise
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- PANTALLA 5 -->
+
+<div id="videoScreen">
+
+    <div class="video-container">
+
+        <h1>
+            A Message For You ❤️
+        </h1>
+
+        <div class="video-box">
+
+            <video controls>
+
+                <source
+                    src="videos/TOMYAVONNE.mp4"
+                    type="video/mp4">
+
+                Your browser does not support the video tag.
+
+            </video>
+
+        </div>
+
+        <p class="video-text">
+
+            No matter the distance.
+
+            <br><br>
+
+            You will always be my favorite place.
+
+            <br><br>
+
+            FoREVer ❤️
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
